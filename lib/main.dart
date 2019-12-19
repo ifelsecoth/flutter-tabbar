@@ -38,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -47,25 +46,15 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           labelColor: Color(0xffffffff),
           unselectedLabelColor: Color(0x55ffffff),
           tabs: <Tab>[
-            Tab(
-              icon: Icon(Icons.home),
-              text: 'หน้า 1'
-            ),
-            Tab(
-              icon: Icon(Icons.book),
-              text: 'หน้า 2'
-            ),
-            Tab(
-              icon: Icon(Icons.more),
-              text: 'หน้า 3'
-            ),
+            Tab(icon: Icon(Icons.home), text: 'หน้า 1'),
+            Tab(icon: Icon(Icons.book), text: 'หน้า 2'),
+            Tab(icon: Icon(Icons.more), text: 'หน้า 3'),
           ],
           controller: controller,
         ),
-        
       ),
       body: TabBarView(
-        children: <Widget>[MyPage(title:'หน้า 1'),MyPage(title:'หน้า 2'),MyPage(title:'หน้า 3')],
+        children: <Widget>[MyPage(title:'หน้า 1'), MyPage(title:'หน้า 2'), MyPage(title:'หน้า 3')],
         controller: controller,
       ),
     );

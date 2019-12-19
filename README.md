@@ -1,3 +1,3 @@
-# ตัวอย่างการสร้าง TabBar ใน Flutter
+# ตัวอย่างการสร้าง TabBar บน Flutter
 
 <img src="assets/tabbar.png">
